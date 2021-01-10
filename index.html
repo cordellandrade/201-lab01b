@@ -9,6 +9,35 @@
         h1 {
             color: purple;
             background-color: aqua;
+            text-align: center;
+        }
+        
+        #p1 {
+            color: red;
+            background-color: green;
+            margin: 30px;
+            margin-right: 1188px;
+        }
+        
+        #p2 {
+            color: greenyellow;
+            background-color: grey;
+            margin: 30px;
+            margin-right: 1128px;
+        }
+        
+        #p3 {
+            color: orange;
+            background-color: olive;
+            margin: 30px;
+            margin-right: 1150px;
+        }
+        
+        #p4 {
+            color: skyblue;
+            background-color: blueviolet;
+            margin: 30px;
+            margin-right: 1050px;
         }
     </style>
 </head>
@@ -17,10 +46,35 @@
     <header>
         <main>
             <h1>Class 1 Lab</h1>
-            <p></p>
+            <p id="p1">What is your name?</p>
+            <p id='p2'>What movie is your favorite?</p>
+            <p id='p3'>Do you like dogs or cats?</p>
+            <p id='p4'>Do you prefer Apple or Android devices?</p>
+
         </main>
     </header>
-    <footer></footer>
+    <footer>
+
+    </footer>
+
+    <script>
+        var userName = prompt('What is your name?');
+        console.log(`Hi ${userName}`);
+
+        var questionTwo = prompt('What movie is your favorite?');
+        console.log(`${questionTwo} is a great film!`);
+
+        var questionThree = prompt('Do you like dogs or cats?');
+        console.log(`I like ${questionThree} too!`);
+
+        var questionFour = prompt('Do you prefer Apple or Android devices?');
+        console.log(`I like ${questionFour} too.`);
+
+
+
+        alert(`Welcome ${userName}, ${questionTwo} is a great film to watch! ${questionThree} are fun to be around and I like ${questionFour} devices too.`);
+    </script>
+
 
 </body>
 
